@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
@@ -67,13 +68,13 @@
             <h2 class="main-title">
               Grow Together
             </h2>
-            <p class="blocktext-p">
+            <p class="main-p">
               Generate meaningful discussions with your audience and build a
               strong, loyal community. Think of the insightful conversations you
               miss out on with a feedback form.
             </p>
           </div>
-            <div>
+            <div class="main-imgs">
             <img
               class="grow-together"
               src="images/illustration-grow-together.svg"
@@ -99,13 +100,13 @@
             <h2>
               Flowing Conversations
             </h2>
-            <p class="blocktext-p">
+            <p class="main-p">
               You wouldn't paginate a conversation in real life, so why do it
               online? Our threads have just-in-time loading for a more natural
               flow.
             </p>
           </div>
-          <div>
+          <div class="main-imgs">
             <img
               class="conversation"
               src="images/illustration-flowing-conversation.svg"
@@ -124,13 +125,13 @@
             <h2 class="main-title">
               Your Users
             </h2>
-            <p class="blocktext-p">
+            <p class="main-p">
               It takes no time at all to integrate Huddle with your app's
               authentication solution. This means, once signed in to your app,
               your users can start chatting immediately.
             </p>
           </div>
-            <div>
+            <div class="main-imgs" >
               <img
                 class="youruser"
                 src="images/illustration-your-users.svg"
@@ -148,34 +149,65 @@
             />
           </div>
       </section>
-      <div>
+      <div class="m-part4">
         <h2>
           Ready To Build Your Community?
         </h2>
-        <a href="#">Get Started For Free</a>
+        <p class="main-btn">
+        <a class="main-btn" href="#">Get Started For Free</a>
+      </p>
       </div>
     </main>
 
     <footer>
-      <section>
+      <section class="footer-section">
         <div>
+          <img class="footer-curve" src="images/bg-footer-top-desktop.svg" alt="footer-img">
+        <img class="ft-cur-mobile" src="images/bg-footer-top-mobile.svg" alt="footer-mobile">
+        </div>
+        <div class="footer-main">
+        <div class="footer-content">
+        <div class="footer-text">
+        <div class="footer-logo">
           <img src="images/logo.svg" alt="footer-logo" />
-          <p>
+        </div>
+        
+          <p class="f-address">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
             nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
           </p>
-          <p>Phone: +1-543-123-4567</p>
-          <p>example@huddle.com</p>
+          <ul>
+          <li class="f-phone"><img class="phone-icon" src="images/icon-phone.svg" alt="">Phone: +1-543-123-4567</li>
+          <li class="f-email"><img class="email-icon" src="images/icon-email.svg" alt="">example@huddle.com</li>
+        </ul>
         </div>
-        <div>
+        <div class="news-letter">
           <h2>Newsletter</h2>
           <p>
             To recieve tips on how to grow your community, sign up to our weekly
             newsletter. We’ll never send you spam or pass on your email address
           </p>
+        
+          
           <input type="email" class="email" name="email" />
           <a href="#">Subscribe</a>
+        
+      </div>
         </div>
+
+    <div class="socials">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>  
+            <div class="social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>           
+            <div class="social">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+            
+          </div>
       </section>
     </footer>
   </body>
