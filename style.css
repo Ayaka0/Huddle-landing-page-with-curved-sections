@@ -268,7 +268,115 @@ a {
   font-size: 1.33em;
 }
 
+@media (max-width: 1100px) {
+  .header-main img {
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 3em;
+  }
+  .news-letter p {
+    padding-right: 8em;
+    padding-bottom: 1.5em;
+  }
+  .news-letter input {
+    margin-bottom: 2em;
+  }
+}
+
 @media screen and (max-width: 639px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .header-upper {
+    margin: 3em 1em 8em 1em;
+  }
+  .header-logo {
+    height: 15px;
+  }
+  .header-upper a {
+    padding: 0.2em 1em;
+    font-size: 0.8rem;
+    transform: translateY(-0.3em);
+  }
+  .header-main a {
+    padding: 0.5em 2em;
+  }
+  .header-main h2 {
+    margin-top: 1em;
+  }
+  .blocktext-p {
+    max-width: 90%;
+  }
+  .header-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5em;
+    height: 500px;
+    text-align: center;
+  }
+  .number1::before {
+    content: url(images/icon-communities.svg);
+    position: relative;
+    right: 1em;
+  }
+  .number2::before {
+    content: url(images/icon-messages.svg);
+    position: relative;
+    right: 1em;
+  }
+
+  .m-part1,
+  .m-part2,
+  .m-part3 {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .m-text {
+    padding: 1em;
+  }
+  .main-title,
+  .m-part4 h2 {
+    font-size: 1.5rem;
+  }
+
+  .grow-mobile-top,
+  .grow-mobile-bottom,
+  .users-mobile-top,
+  .users-mobile-bottom,
+  .ft-cur-mobile {
+    width: 100%;
+  }
+  .grow-mobile-top,
+  .users-mobile-top,
+  .ft-cur-mobile {
+    transform: translateY(1em);
+  }
+
+  .main-text h2 {
+    padding-bottom: 1.5em;
+  }
+  .main-p {
+    text-align: center;
+    padding-right: 0;
+    line-height: 1.7;
+  }
+  .main-imgs {
+    text-align: center;
+    width: 80%;
+    height: auto;
+    margin: 3em;
+  }
+  .main-imgs .conversation {
+    padding-left: 0;
+  }
+
   .grow-desktop,
   .grow-desk-bottom,
   .users-top,
@@ -276,8 +384,56 @@ a {
   .footer-curve {
     display: none;
   }
-}
 
+  .m-part4 h2 {
+    margin-bottom: 2em;
+  }
+  .m-part4 {
+    padding: 4em;
+    margin-bottom: 12em;
+  }
+  .main-btn a {
+    padding: 1em 2em;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 1em;
+  }
+  .news-letter {
+    margin: 0;
+    padding: 0;
+  }
+  .news-letter p {
+    line-height: 1.7;
+    display: block;
+    padding-right: 0;
+  }
+
+  .footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .news-letter input {
+    width: 100%;
+    margin: 0 0 2em 0;
+  }
+  .news-letter a {
+    align-self: flex-end;
+  }
+  .footer-logo {
+    width: 80%;
+  }
+  .f-address {
+    padding-right: 0;
+    line-height: 1.7;
+  }
+  .socials {
+    padding-left: 2.5em;
+  }
+}
 @media screen and (min-width: 640px) {
   .grow-mobile-top,
   .grow-mobile-bottom,
